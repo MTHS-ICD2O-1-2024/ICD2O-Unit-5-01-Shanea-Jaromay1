@@ -13,16 +13,16 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 function checkNumber() {
   // input
   const userNumber = parseInt(document.getElementById("user-number").value);
-
   // process 
   if (userNumber === randomNumber) {
     // output
     document.getElementById('result').innerHTML = 
-    '<p>You have guessed the coreect number! HURRAY!</p>'
+    'You have guessed the correct number! HURRAY!'
   }
   if (userNumber !== randomNumber) {
     // output
     document.getElementById('result').innerHTML = 
-    '<p>You have guessed the wrong number! BOO!' + 
-    '<br/>The correct number was: + randomNumber + </p>'
+    'You have guessed the wrong number! BOO!' + 
+    'The correct number was:' + randomNumber + '.'
   }
+}
